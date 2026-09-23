@@ -1,53 +1,26 @@
-# Vertex AI Studio Frontend App with Node.js Backend
+# UNISCAN
 
-This repository contains a frontend and a Node.js backend, designed to run together.
-The backend acts as a proxy, handling Google Cloud API calls.
+UNISCAN is a powerful B2B Invoice and Challan extraction and verification system. It streamlines the process of digitizing physical documents, extracting key data points, and verifying them for accuracy.
 
-This project is intended for demonstration and prototyping purposes only.
-It is not intended for use in a production environment.
+## Features
 
-## Prerequisites
+*   **Secure Authentication:** Access controlled via secure login.
+*   **Smart Document Scanning:** Built-in mobile-optimized scanner with auto-cropping and perspective correction.
+*   **Advanced Data Extraction:** Automatically extracts Invoice Numbers, Dates, Company Details, GSTINs, Vehicle Numbers, and comprehensive Line Item data (Description, Qty, Rate, Amount, Tax, Total) using an advanced extraction engine.
+*   **Fast-Verify Review:** A side-by-side interface to quickly compare the original document with the extracted data and make corrections.
+*   **Export Capabilities:** Export verified data directly to CSV for easy integration with ERP and accounting systems.
+*   **PDF Generation:** Save scanned and processed documents as clean PDFs.
 
-To run this application locally, you need:
+## Tech Stack
 
-*   **[Google Cloud SDK / gcloud CLI](https://cloud.google.com/sdk/docs/install)**: Follow the instructions to install the SDK.
+*   React 18
+*   TypeScript
+*   Tailwind CSS
+*   Zustand (State Management)
+*   Lucide React (Icons)
 
-*   **gcloud Initialization**:
-    *   Initialize the gcloud CLI:
-        ```bash
-        gcloud init
-        ```
-    *   Authenticate for Application Default Credentials (needed to call Google Cloud APIs):
-        ```bash
-        gcloud auth application-default login
-        ```
+## Getting Started
 
-*   **Node.js and npm**: Ensure you have Node.js and its package manager, `npm`, installed on your machine.
-
-## Project Structure
-
-The project is organized into two main directories:
-
-*   `frontend/`: Contains the Frontend application code.
-*   `backend/`: Contains the Node.js/Express server code to proxy Google Cloud API calls.
-
-## Backend Environment Variables
-
-The `backend/.env.local` file is automatically generated when you download this application.
-It contains essential Google Cloud environment variables pre-configured based on your project settings at the time of download.
-
-The variables set in `backend/.env.local` are:
-*   `API_BACKEND_PORT`: The port the backend API server listens on (e.g., `5000`).
-*   `API_PAYLOAD_MAX_SIZE`: The maximum size of the request payload accepted by the backend server (e.g., `5mb`).
-*   `GOOGLE_CLOUD_LOCATION`: The Google Cloud region associated with your project.
-*   `GOOGLE_CLOUD_PROJECT`: Your Google Cloud Project ID.
-
-**Note:** These variables are automatically populated during the download process.
-You can modify the values in `backend/.env.local` if you need to change them.
-
-## Installation and Running the App
-
-To install dependencies and run your Google Cloud Vertex AI Studio App locally, execute the following command:
-
-```bash
-npm install && npm run dev
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Start the development server using `npm run dev`.
