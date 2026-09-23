@@ -1,0 +1,7 @@
+{
+  "name": "UNISCAN",
+  "description": "B2B Invoice and Challan extraction and verification system using AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
